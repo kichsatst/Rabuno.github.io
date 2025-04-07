@@ -3,65 +3,158 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vorix - Creative Digital Agency</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/5.0.0-beta3/css/bootstrap.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Rabuno | Aspiring Software Engineer</title>
     <style>
+        /* General Styles */
         body {
-            font-family: 'Roboto', sans-serif;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f9f9f9;
         }
-        .dark-mode {
-            background-color: #121212;
-            color: #ffffff;
+
+        h1, h2 {
+            color: #000;
+        }
+
+        a {
+            color: #007BFF;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav ul li {
+            margin: 0;
+        }
+
+        nav ul li a {
+            color: #fff;
+            font-weight: bold;
+        }
+
+        /* Section Styles */
+        section {
+            background: #fff;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        section h2 {
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+        }
+
+        /* Gallery Styles */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery img {
+            width: 100%;
+            max-width: 250px;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Typography */
+        p {
+            font-size: 18px;
+            line-height: 1.8;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            margin-top: 20px;
         }
     </style>
 </head>
 <body>
-    <header class="container-fluid bg-dark text-white text-center py-3">
-        <h1>Vorix - Creative Digital Agency</h1>
-    </header>
-    <main class="container my-5">
-        <section>
-            <h2>About Vorix</h2>
-            <p>Vorix is a versatile and dynamic React Next JS template for Creative and Digital Agencies. It includes over 15+ high-quality pages, including two stunning home pages, service pages, portfolio pages, team pages, testimonials, blog layouts, and more.</p>
-        </section>
-        <section>
-            <h2>Features</h2>
-            <ul>
-                <li>2 Home Pages</li>
-                <li>14+ Additional Pages</li>
-                <li>Dark/Light Mode Support</li>
-                <li>Vanilla JavaScript Integration</li>
-                <li>Built with Bootstrap 5</li>
-                <li>Swiper Slider</li>
-                <li>Parallax Effects</li>
-                <li>Interactive Contact Form</li>
-                <li>Clean, Organized Code</li>
-                <li>Cross-Browser Compatibility</li>
-                <li>Google Fonts</li>
-                <li>Material Icons</li>
-                <li>Modern, Aesthetic Design</li>
-                <li>Easy to Customize</li>
-                <li>Comprehensive Documentation</li>
-                <li>Free Fonts and Icons</li>
-                <li>24/7 Customer Support</li>
-            </ul>
-        </section>
-        <section>
-            <h2>Gallery</h2>
-            <img src="https://via.placeholder.com/800x400" alt="Gallery Image 1" class="img-fluid mb-3">
-            <img src="https://via.placeholder.com/800x400" alt="Gallery Image 2" class="img-fluid mb-3">
-        </section>
-    </main>
-    <footer class="container-fluid bg-dark text-white text-center py-3">
-        <p>&copy; 2025 Vorix. All rights reserved.</p>
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#learning">What I’m Learning</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>Hey there, I’m Rabuno — a junior developer on a journey to becoming a great software engineer. I'm currently learning the fundamentals of programming and building small projects to sharpen my skills. My main focus right now is on mastering C, Java, and HTML as I explore the world of software development.</p>
+    </section>
+
+    <!-- What I’m Learning Section -->
+    <section id="learning">
+        <h2>What I’m Learning</h2>
+        <ul>
+            <li>Writing clean and efficient code in C and Java</li>
+            <li>Building simple static web pages using HTML</li>
+            <li>Understanding core concepts like data structures, algorithms, and object-oriented programming</li>
+        </ul>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/9766.jpg" alt="A stunning landscape wallpaper">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21899.jpg" alt="Bugatti W16">
+            <img src="https://4kwallpapers.com/images/walls/thumbs_3t/21436.jpg" alt="Golden hour">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>You can reach me at <a href="mailto:example@example.com">example@example.com</a>.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Rabuno | Aspiring Software Engineer</p>
     </footer>
-    <script>
-        // Script to toggle dark mode
-        function toggleDarkMode() {
-            document.body.classList.toggle('dark-mode');
-        }
-    </script>
 </body>
 </html>
