@@ -1,70 +1,101 @@
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f2f5;
-    color: #1c1e21;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
 }
-header {
-    background-color: #4267B2;
-    color: white;
-    padding: 20px;
-    text-align: center;
+
+h1, h2 {
+    color: #000;
 }
-nav {
-    background-color: #ffffff;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-nav ul li {
-    display: inline;
-    padding: 14px 20px;
-}
-nav ul li a {
-    color: #4267B2;
+
+a {
+    color: #007BFF;
     text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #fff;
     font-weight: bold;
 }
-nav ul li a:hover {
-    background-color: #e4e6eb;
-    color: #4267B2;
-}
-main {
-    padding: 20px;
-}
+
+/* Section Styles */
 section {
-    margin-bottom: 20px;
+    background: #fff;
+    margin: 20px auto;
     padding: 20px;
-    background-color: white;
     border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
 }
-h2 {
-    color: #4267B2;
+
+section h2 {
+    border-bottom: 2px solid #007BFF;
+    padding-bottom: 5px;
 }
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 10px 0;
+
+/* Gallery Styles */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
 }
+
+.gallery img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Typography */
+p {
+    font-size: 18px;
+    line-height: 1.8;
+}
+
 ul {
-    list-style-type: square;
     padding-left: 20px;
 }
-figure {
-    margin: 0;
-    padding: 0;
-}
-figcaption {
+
+/* Footer */
+footer {
     text-align: center;
-    font-style: italic;
-    color: #606770;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
 }
