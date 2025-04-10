@@ -9,7 +9,7 @@ body, html {
 
 /* Hero Section */
 #hero {
-    background-image: url('https://via.placeholder.com/1920x1080');
+    background-image: url('https://your-image-url-here'); /* Replace this with the URL of the provided image */
     background-size: cover;
     background-position: center;
     height: 100vh;
